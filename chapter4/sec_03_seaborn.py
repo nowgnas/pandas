@@ -56,8 +56,6 @@ ax = plt.subplots()
 # 왜 안되는거야
 # scatter = sns.lmplot(x='total_bill', y='tip', data=tips, fit_reg=False, hue='sex',
 #                      scatter_kws={'s': tips['size'] * 10})
-
 # lmplot 4개 데이터 그룹에 대한 그래ㅐ프 한번에 그리기
-
 
 plt.show()
