@@ -15,4 +15,5 @@ tips_sub_miss.loc[[1, 3, 5, 7], 'total_bill'] = 'missing'
 
 tips_sub_miss['total_bill'] = pd.to_numeric(tips_sub_miss['total_bill'],
                                             errors='coerce', downcast='float')
+
 print(tips_sub_miss.dtypes)

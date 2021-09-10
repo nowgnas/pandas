@@ -17,6 +17,10 @@ gapminder = pd.read_csv('../doit_pandas/data/gapminder.tsv', sep='\t')
 
 life_exp = gapminder.groupby(['year'])['lifeExp'].mean()
 # print(life_exp)
+
+# EX: 에러가 왜 뜰까 ????
+print(life_exp.loc[range(2000, 2010),])
+
 y2000 = life_exp[life_exp.index > 2000]
 # print(y2000)
 
