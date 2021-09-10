@@ -13,11 +13,15 @@ u2 = 'w'
 coords = ''.join([d1, m1, s1, u1, d2, m2, s2, u2])
 # print(coords)
 
-multi_str = '''hihihi : hihihi sangwon 
-king author 
-gurad
-king 
+multi_str = '''Guard: what? 
+king authur: yes
+Guard: hihihi
+king
+Guard: bye
 '''
 # print(multi_str)
 multi_split_line = multi_str.splitlines()
-print(multi_split_line)
+# print(multi_split_line)
+
+gurad = multi_str.replace('Guard:', '').splitlines()[::2]
+print(gurad)
