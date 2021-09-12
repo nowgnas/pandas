@@ -70,4 +70,3 @@ for idx, col in enumerate(ebola):
     ebola_dict[col] = shifted
 
 ebola_shift = pd.DataFrame(ebola_dict)
-
